@@ -1,0 +1,225 @@
+/* Ninkki Legal Pages — Common Styles */
+:root {
+  --primary: #2E9CCA;
+  --primary-dark: #1b7ba4;
+  --accent: #f9a8d4;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+header a.logo {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+header .tagline {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+nav.lang {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+nav.lang a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  transition: all 0.2s;
+}
+
+nav.lang a:hover,
+nav.lang a.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+
+main {
+  max-width: 780px;
+  margin: 32px auto;
+  padding: 0 20px 60px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: var(--text);
+}
+
+.updated {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 32px 0 10px 0;
+  color: var(--text);
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 8px 0;
+  color: #374151;
+}
+
+p, li {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.85;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+pre.plain {
+  background: #f3f4f6;
+  border-left: 4px solid var(--primary);
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #374151;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 12px 0;
+}
+
+.contact-box {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+
+.contact-box strong {
+  color: #92400e;
+}
+
+.contact-box a {
+  color: var(--primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  color: var(--text-muted);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+footer a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: 0 2px 6px rgba(46, 156, 202, 0.25);
+}
+
+.nav-links a:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  main { padding: 0 14px 40px; margin: 20px auto; }
+  .card { padding: 22px 18px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 16px; }
+}
