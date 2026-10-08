@@ -20,7 +20,7 @@
 <main>
   <div class="card">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: April 6, 2026</p>
+    <p class="updated">Last updated: October 8, 2026</p>
 
     <p>Ninkki ("App") respects user privacy and is committed to protecting personal information. This Privacy Policy describes the types of information the App collects, the purposes for which it is used, sharing with third parties, and your rights as a user.</p>
 
@@ -63,7 +63,7 @@
     <p>The information we collect is used for the following purposes:</p>
     <ul>
       <li>Provision and operation of the service</li>
-      <li>Optimization of AI follower comments and reaction generation (using the Google Gemini API)</li>
+      <li>Generation of AI follower comments and reactions, assessment of post content, conversation summaries, and Oshi Mode knowledge (using Google Gemini API or OpenAI API with GPT-6 Luna, as selected by the operator)</li>
       <li>Delivery of push notifications</li>
       <li>Responding to user support inquiries</li>
       <li>Prevention of unauthorized use</li>
@@ -74,11 +74,14 @@
     <p>The App uses the following third-party services to provide its functionality. Only the minimum information necessary for each service is shared.</p>
     <ul>
       <li><strong>Supabase</strong> — Used as the database and authentication infrastructure. User data is stored on Supabase cloud servers (PostgreSQL).</li>
-      <li><strong>Google Gemini API</strong> — Used for AI comment generation. Post content is sent for AI processing.</li>
+      <li><strong>Google Gemini API / OpenAI API (GPT-6 Luna)</strong> — Used for generative AI processing within the App. Depending on the operator’s switching setting, the selected provider receives only information needed for the processing, such as post text and images, relevant post and reply history and summaries, profile information, AI follower settings, and Oshi Mode registration information. The initial setting is Google Gemini; information is not sent to OpenAI for this processing unless the operator switches to OpenAI. The same processing is not routinely sent to both providers for comparison.</li>
       <li><strong>Google AdMob</strong> — Used for ad delivery. Ads are displayed only to users on the free plan. The advertising ID may be used when ATT permission (described below) is granted.</li>
       <li><strong>Apple</strong> — Used for In-App Purchase processing and Sign in with Apple authentication.</li>
       <li><strong>Expo</strong> — Used as the push notification delivery service.</li>
     </ul>
+
+    <h3>Data Handling by AI Providers</h3>
+    <p>Requests to the OpenAI API use <code>store:false</code> to disable storage of generated responses. This does not guarantee that no data is retained. Abuse monitoring logs are normally retained for up to 30 days, with exceptions for legal and safety requirements. Images and other inputs may also be subject to retention exceptions. Use of submitted data for training and its retention are governed by each provider’s applicable terms and account settings. See OpenAI’s <a href="https://developers.openai.com/api/docs/guides/your-data">official data controls documentation</a> for details. Section 7 describes retention and deletion of data managed by the App.</p>
 
     <h3>Payment Information</h3>
     <ul>
